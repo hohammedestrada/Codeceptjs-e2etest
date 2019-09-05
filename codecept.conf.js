@@ -7,14 +7,16 @@ exports.config = {
       url: 'https://www.somosbelcorp.com/',
       //fullPageScreenshots: true,
       windowSize: "1350x720",
-      show:true,
+      //show:true,
       chrome: {
+		headless: true,
         args: [
               //'--use-fake-ui-for-media-stream',
               //'--disable-web-security',
               //'--use-fake-device-for-media-stream',
               //'--allow-file-access-from-files',
               //'--allow-running-insecure-content',
+			  '--no-sandbox',
               '--window-size=1920,1080'
         ]
     }
